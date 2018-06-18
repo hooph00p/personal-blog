@@ -1,18 +1,15 @@
 import React, { Component } from 'react';
-import { Input, Button } from 'semantic-ui-react';
-import * as FA from 'react-fontawesome';
+import { Input } from 'semantic-ui-react';
 
 class SearchBar extends Component {
   render() {
     return (
-     <div style={{"display":"flex"}}>
-       <Input placeholder="Search..."/>
-       <Button style={{"background":"none", "border": "none"}}>
-         <FA name='fas fa-search'/>
-        </Button>
-     </div>
-   );
- }
+        <div>
+          <Input style={{width:"100%"}} icon='search' placeholder='Search...' />
+        </div>
+
+    );
+  }
 }
- 
+
 export default SearchBar;
